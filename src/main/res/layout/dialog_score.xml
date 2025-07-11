@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:gravity="center">
+
+    <!-- Horizontal Layout for Image and OK Button -->
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score Summary"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Score Message -->
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your score will appear here."
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+
+        <!-- Image on the Left -->
+        <ImageView
+            android:id="@+id/dialog_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/score"
+        android:layout_gravity="start"/>
+
+        <!-- OK Button on the Right -->
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FF5722"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

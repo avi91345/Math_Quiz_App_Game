@@ -1,0 +1,93 @@
+<!-- res/layout/dialog_difficulty_selection.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center">
+
+    <!-- Difficulty Options -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Difficulty Level"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:fontFamily="serif"/>
+
+        <Button
+            android:id="@+id/btn_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:backgroundTint="#4A68C3"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:backgroundTint="#F44336"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/think2"
+        android:contentDescription="Difficulty Image"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="8dp" />
+</LinearLayout>

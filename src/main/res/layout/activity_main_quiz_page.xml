@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="15dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:gravity="center"
+    android:background="@drawable/quizpage">
+
+    <!-- Score, Set Number, and Difficulty Label at the Top Left Corner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Total Score TextView -->
+        <TextView
+            android:id="@+id/tvTotalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0/10"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="serif"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/cardview_dark_background"
+            android:padding="6dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <!-- Set Number TextView -->
+        <TextView
+            android:id="@+id/tvSetNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set 1"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="serif"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/cardview_dark_background"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:padding="6dp"/>
+
+        <!-- Difficulty Level TextView -->
+        <TextView
+            android:id="@+id/tvDifficultyLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty: Easy"
+            android:fontFamily="serif"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/cardview_dark_background"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:padding="6dp"/>
+
+        <!-- Spacer to push the button to the end -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- End Button -->
+        <Button
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_marginRight="25dp"/>
+    </LinearLayout>
+
+    <!-- Score & Remaining Chances at the Top Right -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp">
+
+        <!-- Remove Option Chances TextView -->
+        <TextView
+            android:id="@+id/tvRemoveOptionChances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Option Chances: 2"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/cardview_dark_background"
+            android:padding="6dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            />
+
+        <!-- Skipped Questions TextView -->
+        <TextView
+            android:id="@+id/tvSkippedQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skipped Questions: 0"
+            android:fontFamily="serif"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:background="@color/cardview_dark_background"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <!-- Question TextView -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample Question?"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/cardview_dark_background"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="100"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:layout_marginRight="15dp"/>
+
+    <!-- Options Row 1 (Option A and Option B) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Option A Button -->
+        <Button
+            android:id="@+id/btnOptionA"
+            android:text="Option a"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <!-- Option B Button -->
+        <Button
+            android:id="@+id/btnOptionB"
+            android:text="Option b"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <!-- Options Row 2 (Option C and Option D) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Option C Button -->
+        <Button
+            android:id="@+id/btnOptionC"
+            android:text="Option c"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+
+        <!-- Option D Button -->
+        <Button
+            android:id="@+id/btnOptionD"
+            android:text="Option d"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            app:strokeWidth="2dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <!-- Bottom Buttons for Quiz Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <!-- Lock Button -->
+        <Button
+            android:id="@+id/btnLock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Remove 2 Wrong Options Button -->
+        <Button
+            android:id="@+id/btnRemoveWrongOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Remove 2 Wrong Options"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Skip Question Button -->
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

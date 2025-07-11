@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/background">
+
+    <!-- Left Space with Image -->
+    <LinearLayout
+        android:layout_width="169dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!-- ImageView for the left side -->
+        <ImageView
+            android:id="@+id/leftImage"
+            android:layout_width="232dp"
+            android:layout_height="250dp"
+            android:src="@drawable/lamb"
+            android:contentDescription="Left Image"
+            android:scaleType="centerCrop"
+            android:elevation="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"
+            />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="HELLO!!"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:shadowColor="#000000"
+           android:shadowDx="2"
+           android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- GridLayout on the Right Side -->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:columnCount="3"
+        app:orientation="horizontal"
+        app:rowCount="3">
+
+        <!-- Add buttons for grid with fixed size and kid-friendly styles -->
+
+        <Button
+            android:id="@+id/btnAddition"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Addition"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnSubtraction"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Subtract"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnMultiplication"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Multiply"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:shape="rectangle"
+            android:text="Division"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnWordProblems"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Word Problems"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnFractions"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Fractions"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnPatternsSequences"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Patterns &amp; Sequences"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnMathPuzzles"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#194BDD"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="Math Puzzles"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="1"
+            app:layout_rowSpan="1"
+            app:strokeColor="#FFEB3B"
+            app:strokeWidth="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>
